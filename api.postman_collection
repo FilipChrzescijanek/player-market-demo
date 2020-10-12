@@ -1,0 +1,4906 @@
+{
+	"info": {
+		"_postman_id": "160a8e58-5d1f-4d9c-ab67-fb5302b75750",
+		"name": "Player Market Demo API",
+		"description": "Api Documentation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "players",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "teams",
+							"item": [
+								{
+									"name": "{team Id}",
+									"item": [
+										{
+											"name": "playerTeams",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/players/:id/teams/:teamId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"players",
+														":id",
+														"teams",
+														":teamId"
+													],
+													"variable": [
+														{
+															"id": "25d8c8dd-3f46-4c5b-8ea4-b0e1f84d2705",
+															"key": "id",
+															"value": "schema type not provided",
+															"type": "string",
+															"description": "(Required) id"
+														},
+														{
+															"id": "503f52ed-9544-4680-b672-4fa3ccb47bdd",
+															"key": "teamId",
+															"value": "schema type not provided",
+															"type": "string",
+															"description": "(Required) teamId"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "Not Found",
+													"originalRequest": {
+														"method": "GET",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/players/:id/teams/:teamId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"players",
+																":id",
+																"teams",
+																":teamId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "teamId"
+																}
+															]
+														}
+													},
+													"status": "Not Found",
+													"code": 404,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
+												},
+												{
+													"name": "Unauthorized",
+													"originalRequest": {
+														"method": "GET",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/players/:id/teams/:teamId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"players",
+																":id",
+																"teams",
+																":teamId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "teamId"
+																}
+															]
+														}
+													},
+													"status": "Unauthorized",
+													"code": 401,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
+												},
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "GET",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/players/:id/teams/:teamId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"players",
+																":id",
+																"teams",
+																":teamId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "teamId"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
+												},
+												{
+													"name": "Forbidden",
+													"originalRequest": {
+														"method": "GET",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/players/:id/teams/:teamId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"players",
+																":id",
+																"teams",
+																":teamId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "teamId"
+																}
+															]
+														}
+													},
+													"status": "Forbidden",
+													"code": 403,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										},
+										{
+											"name": "playerTeams",
+											"request": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/players/:id/teams/:teamId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"players",
+														":id",
+														"teams",
+														":teamId"
+													],
+													"variable": [
+														{
+															"id": "b8dd3ec2-964d-4d5a-bf0f-3be7ea28cc7e",
+															"key": "id",
+															"value": "schema type not provided",
+															"type": "string",
+															"description": "(Required) id"
+														},
+														{
+															"id": "fe767440-7948-4e6c-b7fe-ae50c0368ce1",
+															"key": "teamId",
+															"value": "schema type not provided",
+															"type": "string",
+															"description": "(Required) teamId"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "Forbidden",
+													"originalRequest": {
+														"method": "DELETE",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/players/:id/teams/:teamId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"players",
+																":id",
+																"teams",
+																":teamId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "teamId"
+																}
+															]
+														}
+													},
+													"status": "Forbidden",
+													"code": 403,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
+												},
+												{
+													"name": "Unauthorized",
+													"originalRequest": {
+														"method": "DELETE",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/players/:id/teams/:teamId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"players",
+																":id",
+																"teams",
+																":teamId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "teamId"
+																}
+															]
+														}
+													},
+													"status": "Unauthorized",
+													"code": 401,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
+												},
+												{
+													"name": "No Content",
+													"originalRequest": {
+														"method": "DELETE",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/players/:id/teams/:teamId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"players",
+																":id",
+																"teams",
+																":teamId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "teamId"
+																}
+															]
+														}
+													},
+													"status": "No Content",
+													"code": 204,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
+												},
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "DELETE",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/players/:id/teams/:teamId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"players",
+																":id",
+																"teams",
+																":teamId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "teamId"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										}
+									],
+									"protocolProfileBehavior": {},
+									"_postman_isSubFolder": true
+								},
+								{
+									"name": "playerTeams",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/players/:id/teams",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"players",
+												":id",
+												"teams"
+											],
+											"variable": [
+												{
+													"id": "87259c15-ee93-4530-9c85-a672f4b61f54",
+													"key": "id",
+													"value": "schema type not provided",
+													"type": "string",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Forbidden",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/players/:id/teams",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"players",
+														":id",
+														"teams"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Forbidden",
+											"code": 403,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Not Found",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/players/:id/teams",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"players",
+														":id",
+														"teams"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/players/:id/teams",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"players",
+														":id",
+														"teams"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Unauthorized",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/players/:id/teams",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"players",
+														":id",
+														"teams"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "playerTeams",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/players/:id/teams",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"players",
+												":id",
+												"teams"
+											],
+											"variable": [
+												{
+													"id": "c8d4bc3c-eb8c-458b-ac19-c27f596981e7",
+													"key": "id",
+													"value": "schema type not provided",
+													"type": "string",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Forbidden",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/players/:id/teams",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"players",
+														":id",
+														"teams"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Forbidden",
+											"code": 403,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Unauthorized",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/players/:id/teams",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"players",
+														":id",
+														"teams"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Created",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/players/:id/teams",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"players",
+														":id",
+														"teams"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Not Found",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/players/:id/teams",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"players",
+														":id",
+														"teams"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/players/:id/teams",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"players",
+														":id",
+														"teams"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "playerTeams",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/players/:id/teams",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"players",
+												":id",
+												"teams"
+											],
+											"variable": [
+												{
+													"id": "51f2b8d5-75de-46c3-9ce6-2728066af0a1",
+													"key": "id",
+													"value": "schema type not provided",
+													"type": "string",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/players/:id/teams",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"players",
+														":id",
+														"teams"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Unauthorized",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/players/:id/teams",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"players",
+														":id",
+														"teams"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Forbidden",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/players/:id/teams",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"players",
+														":id",
+														"teams"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Forbidden",
+											"code": 403,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Not Found",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/players/:id/teams",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"players",
+														":id",
+														"teams"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Created",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/players/:id/teams",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"players",
+														":id",
+														"teams"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "playerTeams",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/players/:id/teams",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"players",
+												":id",
+												"teams"
+											],
+											"variable": [
+												{
+													"id": "e2099eaf-76eb-4b9a-a1a5-7130d6d18761",
+													"key": "id",
+													"value": "schema type not provided",
+													"type": "string",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/players/:id/teams",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"players",
+														":id",
+														"teams"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Forbidden",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/players/:id/teams",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"players",
+														":id",
+														"teams"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Forbidden",
+											"code": 403,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Unauthorized",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/players/:id/teams",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"players",
+														":id",
+														"teams"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "No Content",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/players/:id/teams",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"players",
+														":id",
+														"teams"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "No Content",
+											"code": 204,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "playerTeams",
+									"request": {
+										"method": "PATCH",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/players/:id/teams",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"players",
+												":id",
+												"teams"
+											],
+											"variable": [
+												{
+													"id": "49490416-8f5b-45ca-a747-03dd1803f1aa",
+													"key": "id",
+													"value": "schema type not provided",
+													"type": "string",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Forbidden",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/players/:id/teams",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"players",
+														":id",
+														"teams"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Forbidden",
+											"code": 403,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/players/:id/teams",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"players",
+														":id",
+														"teams"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "No Content",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/players/:id/teams",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"players",
+														":id",
+														"teams"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "No Content",
+											"code": 204,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Unauthorized",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/players/:id/teams",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"players",
+														":id",
+														"teams"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "findByIdPlayer",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/players/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"players",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "9d546c41-ca7a-406e-a6b9-d4278dc7921c",
+											"key": "id",
+											"value": "schema type not provided",
+											"type": "string",
+											"description": "(Required) id"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/players/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"players",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/players/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"players",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/players/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"players",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/players/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"players",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "savePlayer",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/players/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"players",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "81741714-2bb2-4bf8-84c3-63403117058b",
+											"key": "id",
+											"value": "schema type not provided",
+											"type": "string",
+											"description": "(Required) id"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/players/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"players",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/players/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"players",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/players/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"players",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/players/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"players",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/players/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"players",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "deletePlayer",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/players/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"players",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "14a5c7f4-cba8-4920-a8ec-a09e5cb1c175",
+											"key": "id",
+											"value": "schema type not provided",
+											"type": "string",
+											"description": "(Required) id"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/players/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"players",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/players/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"players",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/players/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"players",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/players/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"players",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "savePlayer",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/players/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"players",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "a23cea26-50ce-40b8-b84b-f5114409338a",
+											"key": "id",
+											"value": "schema type not provided",
+											"type": "string",
+											"description": "(Required) id"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/players/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"players",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/players/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"players",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/players/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"players",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/players/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"players",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "findAllPlayer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/players?page=&size=&sort=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"players"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "",
+									"description": "page"
+								},
+								{
+									"key": "size",
+									"value": "",
+									"description": "size"
+								},
+								{
+									"key": "sort",
+									"value": "",
+									"description": "sort"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/players?page=&size=&sort=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"players"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": ""
+										},
+										{
+											"key": "size",
+											"value": ""
+										},
+										{
+											"key": "sort",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/players?page=&size=&sort=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"players"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": ""
+										},
+										{
+											"key": "size",
+											"value": ""
+										},
+										{
+											"key": "sort",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/players?page=&size=&sort=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"players"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": ""
+										},
+										{
+											"key": "size",
+											"value": ""
+										},
+										{
+											"key": "sort",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/players?page=&size=&sort=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"players"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": ""
+										},
+										{
+											"key": "size",
+											"value": ""
+										},
+										{
+											"key": "sort",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "savePlayer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/players",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"players"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/players",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"players"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/players",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"players"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/players",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"players"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/players",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"players"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/players",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"players"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "teams",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "players",
+							"item": [
+								{
+									"name": "{player Id}",
+									"item": [
+										{
+											"name": "teamPlayers",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/teams/:id/players/:playerId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"teams",
+														":id",
+														"players",
+														":playerId"
+													],
+													"variable": [
+														{
+															"id": "2f72b1a7-9ab6-4eb5-9a73-1b735358208a",
+															"key": "id",
+															"value": "schema type not provided",
+															"type": "string",
+															"description": "(Required) id"
+														},
+														{
+															"id": "586031ed-bfcf-4b68-b1e1-0573cb3462ab",
+															"key": "playerId",
+															"value": "schema type not provided",
+															"type": "string",
+															"description": "(Required) playerId"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "GET",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/teams/:id/players/:playerId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"teams",
+																":id",
+																"players",
+																":playerId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "playerId"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
+												},
+												{
+													"name": "Unauthorized",
+													"originalRequest": {
+														"method": "GET",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/teams/:id/players/:playerId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"teams",
+																":id",
+																"players",
+																":playerId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "playerId"
+																}
+															]
+														}
+													},
+													"status": "Unauthorized",
+													"code": 401,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
+												},
+												{
+													"name": "Not Found",
+													"originalRequest": {
+														"method": "GET",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/teams/:id/players/:playerId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"teams",
+																":id",
+																"players",
+																":playerId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "playerId"
+																}
+															]
+														}
+													},
+													"status": "Not Found",
+													"code": 404,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
+												},
+												{
+													"name": "Forbidden",
+													"originalRequest": {
+														"method": "GET",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/teams/:id/players/:playerId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"teams",
+																":id",
+																"players",
+																":playerId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "playerId"
+																}
+															]
+														}
+													},
+													"status": "Forbidden",
+													"code": 403,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										},
+										{
+											"name": "teamPlayers",
+											"request": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/teams/:id/players/:playerId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"teams",
+														":id",
+														"players",
+														":playerId"
+													],
+													"variable": [
+														{
+															"id": "d0a52a0b-b9dc-44e7-9104-862e931ec02f",
+															"key": "id",
+															"value": "schema type not provided",
+															"type": "string",
+															"description": "(Required) id"
+														},
+														{
+															"id": "d739e813-4d91-49f0-ad25-27918dfb10fd",
+															"key": "playerId",
+															"value": "schema type not provided",
+															"type": "string",
+															"description": "(Required) playerId"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "DELETE",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/teams/:id/players/:playerId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"teams",
+																":id",
+																"players",
+																":playerId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "playerId"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
+												},
+												{
+													"name": "Unauthorized",
+													"originalRequest": {
+														"method": "DELETE",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/teams/:id/players/:playerId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"teams",
+																":id",
+																"players",
+																":playerId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "playerId"
+																}
+															]
+														}
+													},
+													"status": "Unauthorized",
+													"code": 401,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
+												},
+												{
+													"name": "Forbidden",
+													"originalRequest": {
+														"method": "DELETE",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/teams/:id/players/:playerId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"teams",
+																":id",
+																"players",
+																":playerId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "playerId"
+																}
+															]
+														}
+													},
+													"status": "Forbidden",
+													"code": 403,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
+												},
+												{
+													"name": "No Content",
+													"originalRequest": {
+														"method": "DELETE",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/teams/:id/players/:playerId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"teams",
+																":id",
+																"players",
+																":playerId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "playerId"
+																}
+															]
+														}
+													},
+													"status": "No Content",
+													"code": 204,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "text/plain"
+														}
+													],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										}
+									],
+									"protocolProfileBehavior": {},
+									"_postman_isSubFolder": true
+								},
+								{
+									"name": "teamPlayers",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/teams/:id/players",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"teams",
+												":id",
+												"players"
+											],
+											"variable": [
+												{
+													"id": "86a6ac39-5c0b-44a7-bc80-fc1ffcf0274b",
+													"key": "id",
+													"value": "schema type not provided",
+													"type": "string",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/teams/:id/players",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"teams",
+														":id",
+														"players"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Not Found",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/teams/:id/players",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"teams",
+														":id",
+														"players"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Forbidden",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/teams/:id/players",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"teams",
+														":id",
+														"players"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Forbidden",
+											"code": 403,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Unauthorized",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/teams/:id/players",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"teams",
+														":id",
+														"players"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "teamPlayers",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/teams/:id/players",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"teams",
+												":id",
+												"players"
+											],
+											"variable": [
+												{
+													"id": "d96c2150-98c2-4c56-b1e1-81e9a4122889",
+													"key": "id",
+													"value": "schema type not provided",
+													"type": "string",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Unauthorized",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/teams/:id/players",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"teams",
+														":id",
+														"players"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Not Found",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/teams/:id/players",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"teams",
+														":id",
+														"players"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Forbidden",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/teams/:id/players",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"teams",
+														":id",
+														"players"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Forbidden",
+											"code": 403,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Created",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/teams/:id/players",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"teams",
+														":id",
+														"players"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/teams/:id/players",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"teams",
+														":id",
+														"players"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "teamPlayers",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/teams/:id/players",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"teams",
+												":id",
+												"players"
+											],
+											"variable": [
+												{
+													"id": "a93f1e71-9220-4c81-8e52-648eb8b2e305",
+													"key": "id",
+													"value": "schema type not provided",
+													"type": "string",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/teams/:id/players",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"teams",
+														":id",
+														"players"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Forbidden",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/teams/:id/players",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"teams",
+														":id",
+														"players"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Forbidden",
+											"code": 403,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Created",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/teams/:id/players",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"teams",
+														":id",
+														"players"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Unauthorized",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/teams/:id/players",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"teams",
+														":id",
+														"players"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Not Found",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/teams/:id/players",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"teams",
+														":id",
+														"players"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "teamPlayers",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/teams/:id/players",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"teams",
+												":id",
+												"players"
+											],
+											"variable": [
+												{
+													"id": "f43f57ed-e47f-4b90-b115-84178d5905d4",
+													"key": "id",
+													"value": "schema type not provided",
+													"type": "string",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/teams/:id/players",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"teams",
+														":id",
+														"players"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Forbidden",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/teams/:id/players",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"teams",
+														":id",
+														"players"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Forbidden",
+											"code": 403,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Unauthorized",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/teams/:id/players",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"teams",
+														":id",
+														"players"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "No Content",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/teams/:id/players",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"teams",
+														":id",
+														"players"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "No Content",
+											"code": 204,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "teamPlayers",
+									"request": {
+										"method": "PATCH",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/teams/:id/players",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"teams",
+												":id",
+												"players"
+											],
+											"variable": [
+												{
+													"id": "de94cf5e-3fcb-4276-9cd6-d2673af79bbc",
+													"key": "id",
+													"value": "schema type not provided",
+													"type": "string",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "No Content",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/teams/:id/players",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"teams",
+														":id",
+														"players"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "No Content",
+											"code": 204,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/teams/:id/players",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"teams",
+														":id",
+														"players"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Forbidden",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/teams/:id/players",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"teams",
+														":id",
+														"players"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Forbidden",
+											"code": 403,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Unauthorized",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/teams/:id/players",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"teams",
+														":id",
+														"players"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "findByIdTeam",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/teams/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"teams",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "d21c424a-3559-4183-8a06-dfc377299667",
+											"key": "id",
+											"value": "schema type not provided",
+											"type": "string",
+											"description": "(Required) id"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/teams/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"teams",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/teams/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"teams",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/teams/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"teams",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/teams/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"teams",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "saveTeam",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/teams/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"teams",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "ae7f2fb5-d704-45b6-a643-dfa0d8789747",
+											"key": "id",
+											"value": "schema type not provided",
+											"type": "string",
+											"description": "(Required) id"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/teams/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"teams",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/teams/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"teams",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/teams/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"teams",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/teams/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"teams",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/teams/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"teams",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "deleteTeam",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/teams/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"teams",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "f1b7ac0d-6743-4ddf-9689-9f8b4cd07def",
+											"key": "id",
+											"value": "schema type not provided",
+											"type": "string",
+											"description": "(Required) id"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/teams/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"teams",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/teams/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"teams",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/teams/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"teams",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/teams/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"teams",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "saveTeam",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/teams/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"teams",
+										":id"
+									],
+									"variable": [
+										{
+											"id": "cc8c43d6-b82c-4a56-ba8a-fcf2634a5b9e",
+											"key": "id",
+											"value": "schema type not provided",
+											"type": "string",
+											"description": "(Required) id"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/teams/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"teams",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/teams/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"teams",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/teams/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"teams",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/teams/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"teams",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "findAllTeam",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/teams?page=&size=&sort=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"teams"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "",
+									"description": "page"
+								},
+								{
+									"key": "size",
+									"value": "",
+									"description": "size"
+								},
+								{
+									"key": "sort",
+									"value": "",
+									"description": "sort"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/teams?page=&size=&sort=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"teams"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": ""
+										},
+										{
+											"key": "size",
+											"value": ""
+										},
+										{
+											"key": "sort",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/teams?page=&size=&sort=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"teams"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": ""
+										},
+										{
+											"key": "size",
+											"value": ""
+										},
+										{
+											"key": "sort",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/teams?page=&size=&sort=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"teams"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": ""
+										},
+										{
+											"key": "size",
+											"value": ""
+										},
+										{
+											"key": "sort",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/teams?page=&size=&sort=",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"teams"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": ""
+										},
+										{
+											"key": "size",
+											"value": ""
+										},
+										{
+											"key": "sort",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "saveTeam",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/teams",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"teams"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/teams",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"teams"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/teams",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"teams"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/teams",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"teams"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/teams",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"teams"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/teams",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"teams"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "calculateFee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/fees/calculate/:teamId/:playerId?commissionPercentage=",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"fees",
+						"calculate",
+						":teamId",
+						":playerId"
+					],
+					"query": [
+						{
+							"key": "commissionPercentage",
+							"value": "",
+							"description": "(Required) commissionPercentage"
+						}
+					],
+					"variable": [
+						{
+							"id": "a7208191-eac6-4eec-9aee-05512a91e28e",
+							"key": "playerId",
+							"value": "schema type not provided",
+							"type": "string",
+							"description": "(Required) playerId"
+						},
+						{
+							"id": "eb2284d3-b767-4367-b069-6d0d9f5af3ab",
+							"key": "teamId",
+							"value": "schema type not provided",
+							"type": "string",
+							"description": "(Required) teamId"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/fees/calculate/:teamId/:playerId?commissionPercentage=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"fees",
+								"calculate",
+								":teamId",
+								":playerId"
+							],
+							"query": [
+								{
+									"key": "commissionPercentage",
+									"value": ""
+								}
+							],
+							"variable": [
+								{
+									"key": "teamId"
+								},
+								{
+									"key": "playerId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				},
+				{
+					"name": "Forbidden",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/fees/calculate/:teamId/:playerId?commissionPercentage=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"fees",
+								"calculate",
+								":teamId",
+								":playerId"
+							],
+							"query": [
+								{
+									"key": "commissionPercentage",
+									"value": ""
+								}
+							],
+							"variable": [
+								{
+									"key": "teamId"
+								},
+								{
+									"key": "playerId"
+								}
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				},
+				{
+					"name": "Unauthorized",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/fees/calculate/:teamId/:playerId?commissionPercentage=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"fees",
+								"calculate",
+								":teamId",
+								":playerId"
+							],
+							"query": [
+								{
+									"key": "commissionPercentage",
+									"value": ""
+								}
+							],
+							"variable": [
+								{
+									"key": "teamId"
+								},
+								{
+									"key": "playerId"
+								}
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				},
+				{
+					"name": "Not Found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/fees/calculate/:teamId/:playerId?commissionPercentage=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"fees",
+								"calculate",
+								":teamId",
+								":playerId"
+							],
+							"query": [
+								{
+									"key": "commissionPercentage",
+									"value": ""
+								}
+							],
+							"variable": [
+								{
+									"key": "teamId"
+								},
+								{
+									"key": "playerId"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "3491140e-0326-4fd9-8f29-e9d00187698a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "6d797a49-d9e9-47e9-91a6-822c9d30d1c1",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "a5d845c6-4f6f-4219-94b4-713fa7831de2",
+			"key": "baseUrl",
+			"value": "/"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
